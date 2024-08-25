@@ -1,0 +1,41 @@
+ 
+  header{
+    background:   #646cffaa;
+  }
+  footer{
+    background: #61dafbaa;
+  }
+  #home {
+    background: aqua;
+  }
+  #members {
+    background: lightgreen;
+  }
+  #posts {
+    background: orange;
+  }
+  #gallery {
+    background: pink;
+  }
+  #youtube {
+    background: violet;
+  }
+  #contact {
+    background: lightblue;
+  }
+  #join {
+    background: lightsalmon;
+  }
+  li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  /* 활성화된 메뉴 항목에 적용될 스타일 */
+  li.on {
+   text-decoration: underline;
+    color: lightgreen;  
+    font-weight: bold;  
+  }
