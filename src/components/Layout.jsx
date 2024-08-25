@@ -1,11 +1,13 @@
-function Layout(props) {
-  console.log(props)
-  return (
-    <main id={props.title.toLowerCase()}>
-      <h2>{props.title}</h2>
-      <section>{props.children}</section>
-    </main>
-  )
+import Breadcrumb from "./Breadcrumb";
+
+function Layout({ title, children }) {
+	return (
+		<main>
+			<h2>{title}</h2>
+			<Breadcrumb />
+			<section id={title.toLowerCase()}>{children}</section>
+		</main>
+	);
 }
 
-export default Layout
+export default Layout;

@@ -8,6 +8,7 @@ import Join from './pages/Join';
 import Members from './pages/Members';
 import Posts from './pages/Posts';
 import Youtube from './pages/Youtube';
+import YoutubeDetail from './pages/YoutubeDetail';
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/youtube" element={<Youtube />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/join" element={<Join />} />
-
+        <Route path="/youtube/:id" element={<YoutubeDetail />} />
       </Routes>
         <Footer />
     </div>
